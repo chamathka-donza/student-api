@@ -29,7 +29,7 @@ public class StudentController {
     @DeleteMapping
     public String deleteStudent(@PathVariable String id){
         repository.delete(id);
-        return "student " + repository.get(id).getName() +" is deleted";
+        return "student " + repository.get(id).getName() +" is deleted successfully";
     }
 
 }
